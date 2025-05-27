@@ -8,6 +8,13 @@
   <img src="#">
   <script>
     const img = document.querySelector('img');
-  </script>
+    fetch('https://api.giphy.com/v1/gifs/translate?api_key=rzYxTMljevzFf9tAcXR5ZgM6kE4p1sHs&s=cats', { mode: 'cors' })
+        .then(function(response) {
+        return response.json();
+        })
+        .then(function(response) {
+        console.log(response.data.images.original.url);
+        });  
+    </script>
 </body>
 </html>
