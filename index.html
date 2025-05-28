@@ -15,23 +15,13 @@
         <h2 class="subheading">Random Cat GIF</h2>
       </div>
       <div>
-        <img src="#">
+        <img id="gif" alt="Random Cat GIF">
       </div>
       <div>
         <p class="instructions">Click the button below to load a new random cat GIF.</p>
-        <button class="reload-btn">Load a new image</button>
+        <button id="reload-btn" class="reload-btn">New image</button>
       </div>
     </div>
-  <script>
-    const img = document.querySelector('img');
-    fetch('https://api.giphy.com/v1/gifs/translate?api_key=rzYxTMljevzFf9tAcXR5ZgM6kE4p1sHs&s=cats', { mode: 'cors' })
-        .then(function(response) {
-        return response.json();
-        })
-        .then(function(response) {
-        // console.log(response.data.images.original.url);
-        img.src = response.data.images.original.url;
-        });  
-    </script>
+  <script src="script.js"></script>
 </body>
 </html>
