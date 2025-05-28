@@ -3,9 +3,25 @@
 <head>
   <meta charset="UTF-8">
   <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <img src="#">
+    <h1 class="heading">Giphy API Example</h1>
+    <p class="description">This example demonstrates how to use the Giphy API to fetch and display a random GIF.</p>
+    <p class="note">Note: The Giphy API requires an API key. You can get one from <a href="https://developers.giphy.com/">Giphy Developers</a>.</p>
+    <div class="container">
+      <div>
+        <h2 class="subheading">Random Cat GIF</h2>
+      </div>
+      <div>
+        <img src="#">
+      </div>
+      <div>
+        <p class="instructions">Click the button below to load a new random cat GIF.</p>
+        <button class="reload-btn">Load a new image</button>
+      </div>
+    </div>
   <script>
     const img = document.querySelector('img');
     fetch('https://api.giphy.com/v1/gifs/translate?api_key=rzYxTMljevzFf9tAcXR5ZgM6kE4p1sHs&s=cats', { mode: 'cors' })
