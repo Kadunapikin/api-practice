@@ -3,7 +3,7 @@ const reloadBtn = document.getElementById('reload-btn');
 
 
 const loadRandomGif = () => {
-  fetch('https://api.giphy.com/v1/gifs/random?api_key=rzYxTMljevzFf9tAcXR5ZgM6kE4p1sHs&tag=&rating=g', { mode: 'cors' })
+  fetch('https://api.giphy.com/v1/gifs/translate?api_key=rzYxTMljevzFf9tAcXR5ZgM6kE4p1sHs&s=cats', { mode: 'cors' })
     .then(response => response.json())
     .then(response => {
       img.src = response.data.images.original.url;
